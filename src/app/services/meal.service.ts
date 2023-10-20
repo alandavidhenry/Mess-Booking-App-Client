@@ -7,7 +7,8 @@ import { Meal } from 'src/app/models/meal.model'
  providedIn: 'root'
 })
 export class MealService {
- private url = 'http://localhost:5200';
+//  private url = 'http://localhost:5200';
+ private url = 'https://mess-booking-app.onrender.com';
  private meals$: Subject<Meal[]> = new Subject();
  
  constructor(private httpClient: HttpClient) { }

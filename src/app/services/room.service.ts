@@ -7,7 +7,8 @@ import { Room } from 'src/app/models/room.model'
  providedIn: 'root'
 })
 export class RoomService {
- private url = 'http://localhost:5200';
+//  private url = 'http://localhost:5200';
+ private url = 'https://mess-booking-app.onrender.com';
  private rooms$: Subject<Room[]> = new Subject();
  
  constructor(private httpClient: HttpClient) { }

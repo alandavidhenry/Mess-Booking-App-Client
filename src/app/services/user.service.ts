@@ -7,7 +7,8 @@ import { User } from '../models/user.model';
  providedIn: 'root'
 })
 export class UserService {
- private url = 'http://localhost:5200';
+//  private url = 'http://localhost:5200';
+private url = 'https://mess-booking-app.onrender.com';
  private users$: Subject<User[]> = new Subject();
  
  constructor(private httpClient: HttpClient) { }
